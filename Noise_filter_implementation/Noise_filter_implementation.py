@@ -89,7 +89,7 @@ axs[0, 0].set_title('Original Image')
 ##### Mean Filter #####
 
 # Apply mean filter with a filter size of 3 (we can adjust as needed) and display the result
-filtered_data_mean_image = mean_filter(data.astype(np.float64), 3)
+filtered_data_mean_image = mean_filter(data.astype(np.float64), 5)
 axs[1, 0].imshow(filtered_data_mean_image, cmap='gray')
 axs[1, 0].set_title('Mean Filtered Image')
 
