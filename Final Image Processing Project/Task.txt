@@ -1,0 +1,30 @@
+Final image processing project assignment
+You must carry out the following image-processing tasks using your own programs.  Use of library functions/external code should be limited to loading, saving image files, and carrying out basic matrix operations.
+
+Step 1: Load the given sample image (sampleimage.png) from the file and convert it into greyscale, 8bpp format.
+
+Step 2: Enhance the image to the best possible quality by applying the following operations.
+
+a.     Noise filtering
+
+b.     Contrast stretching
+
+c.      De-blurring (sharpening)
+
+d.  Any other image enhancement operation that you may think appropriate
+
+You should try at least two different filters/algorithms for each stage. Save the output obtained with each algorithm and compute the SNR resulted by each filter/algorithm.
+
+Step 3: Plot the histogram of the final image.
+
+Step 4: Compute the entropy of the image and the best achievable compression ratio compared to compared to 8bpp gray-scale representation.
+
+You must comply with the following guidelines in doing this project assignment. 
+
+a.     The programs must be written in either Python, MatLab, SciLab, C#, C++ or Java programming languages.  All program code must be properly formatted and should include comments describing the operations, use.
+
+b.     All files (including source code and output images) must be named as “<<your_index_number>>_<<step no>>_<<descriptive name>>”.
+
+c.      Your submission shall include all the source code, intermediate outputs obtained from step 1 to step 3, final image output and brief report describing the image processing steps followed (do not include source code in the report)
+
+d.     Compile all files of your submission into a single archive in ZIP format (please do not use any other archival formats such as RAR) and submit through the link provided. (if the archive size exceeds 50MB limit, you may break it to not more than 3 archives)
