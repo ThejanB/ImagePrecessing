@@ -1,0 +1,1 @@
+converted_image_8bpp_gray.png
