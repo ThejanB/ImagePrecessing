@@ -138,7 +138,8 @@ def canny_edge_detection(img):
     return img_final.astype(np.uint8)
 
 def main():
-    image_file = "input_image.jpg"
+    print("Canny Edge Detection.\n   - Enter the image file name. eg-> image.jpg")
+    image_file = input("Enter the image file name: "    )
     img = cv2.imread(image_file)
     if img is None:
         print("Failed to load image.")
@@ -149,6 +150,10 @@ def main():
     output_file_name = image_file.rsplit('.',1)[0] + '_edge.png'
     cv2.imwrite(output_file_name, edge_img)
     print(f"Edge image saved as {output_file_name}")
+
+    cv2.imshow('Edge Image', edge_img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
 if __name__ == "__main__":
     main()

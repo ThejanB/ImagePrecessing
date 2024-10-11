@@ -207,8 +207,8 @@ def canny_edge_detection(img):
     return output_image
 
 def main():
-
-    image_file = "input_image.jpg"
+    print("Canny Edge Detection.\n   - Enter the image file name. eg-> image.jpg")
+    image_file = input("Enter the image file name: "    )
     try:
         img = Image.open(image_file)
     except IOError:
@@ -220,6 +220,9 @@ def main():
     output_file = image_file.rsplit('.',1)[0] + '_edge.png'
     edge_img.save(output_file)
     print("Edge image saved as", output_file)
+
+    # Display the image
+    edge_img.show()
 
 if __name__ == "__main__":
     main()
