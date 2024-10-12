@@ -207,8 +207,13 @@ def canny_edge_detection(img):
     return output_image
 
 def main():
-    print("Canny Edge Detection.\n   - Enter the image file name. eg-> image.jpg")
-    image_file = input("Enter the image file name: "    )
+    # Check if image file is provided
+    if len(sys.argv) == 2:
+        image_file = sys.argv[1]
+    else:
+        print("Canny Edge Detection.\n   - Enter the image file name. eg-> image.jpg")
+        image_file = input("Enter the image file name:")
+
     try:
         img = Image.open(image_file)
     except IOError:

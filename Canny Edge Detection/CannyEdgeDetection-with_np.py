@@ -138,8 +138,13 @@ def canny_edge_detection(img):
     return img_final.astype(np.uint8)
 
 def main():
-    print("Canny Edge Detection.\n   - Enter the image file name. eg-> image.jpg")
-    image_file = input("Enter the image file name: "    )
+    # Check if image file is provided
+    if len(sys.argv) == 2:
+        image_file = sys.argv[1]
+    else:
+        print("Canny Edge Detection.\n   - Enter the image file name. eg-> image.jpg")
+        image_file = input("Enter the image file name:")
+
     img = cv2.imread(image_file)
     if img is None:
         print("Failed to load image.")
